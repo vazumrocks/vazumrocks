@@ -44,6 +44,7 @@ h1,h2,h3,h4,h5 {
 
 h1 {
   font-size: 7vw;
+  position: relative;
 }
 h2 {
   font-size: 5vw;
@@ -51,6 +52,7 @@ h2 {
 }
 h3 {
   font-size: 4vw;
+  position: relative;
 }
 h4 {
   font-size: 3vw;
