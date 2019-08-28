@@ -38,6 +38,10 @@
   }
   
   @media screen and (min-width: 500px) {
+
+    header {
+      align-items: center;
+    }
     .hamburger-container {
       display: none;
     }
