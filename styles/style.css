@@ -47,6 +47,7 @@ h1 {
 }
 h2 {
   font-size: 5vw;
+  position: relative;
 }
 h3 {
   font-size: 4vw;
@@ -184,7 +185,7 @@ h4 {
   header .logo {
     width: 200px;
     max-width: 100%;
-    padding: 1em 2em 0 2em;
+    padding: 0.5em 2em 0.25em 2em;
   }
   
   .menu ul li a {
@@ -197,6 +198,7 @@ h4 {
     background-position: center;
     background-size: cover;
     height: 40vw;
+    min-height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -351,6 +353,10 @@ h4 {
   .band-mate:hover,
   .band-mate:focus {
     opacity: 1;
+  }
+
+  footer .flex-container > div {
+    margin-bottom: 1em;
   }
 
   footer .logo {
