@@ -197,13 +197,18 @@ h4 {
   .banner {
     background-position: center;
     background-size: cover;
-    height: 43vw;
+    height: 40vw;
     min-height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     position: relative;
+  }
+
+  .banner.video {
+    height: 43vw;
+    min-height: 0;
   }
 
   .banner img {
