@@ -3,6 +3,7 @@
  * dk teal: #001719
  * black: #000000
  * white: #ffffff
+ * red: BA324F
  */
 
 
@@ -298,7 +299,11 @@ footer a:focus {
 /* Sections */
 
 #promo {
-    background-color: #001719;
+    background-color: #66131B;
+    background-position: bottom left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../images/bg/black-splatter.png');
     padding-bottom: 100px;
 }
 
@@ -310,9 +315,21 @@ footer a:focus {
     padding: 3vw;
     margin: 0 auto;
 }
+#promo .streak-up {
+    background-image: url("../images/bg/red-streak-up.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: calc(100% - 10px);
+    left: 0;
+    right: 0;
+    height: 100px;
+    width: 100%;
+}
+
 
 #social-cta {
-    background-color: #00a5a9;
+    background-color: black;
     text-align: center;
     position: relative;
     padding: 1em;
@@ -323,7 +340,7 @@ footer a:focus {
 }
 
 #social-cta .rip-up {
-    background-image: url("../images/bg/teal-rip-up.png");
+    background-image: url("../images/bg/black-rip-up.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -335,7 +352,20 @@ footer a:focus {
 }
 
 #social-cta .rip-down {
-    background-image: url("../images/bg/teal-rip-down.png");
+    background-image: url("../images/bg/black-rip-down.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: calc(100% - 10px);
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: 2;
+    width: 100%;
+}
+
+#social-cta .splatter-down {
+    background-image: url("../images/bg/black-splatter-down.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -348,31 +378,30 @@ footer a:focus {
 }
 
 #band-info {
-    background-image: url("../images/vazum-band.png");
-    background-size: contain;
-    height: 80vw;
+    /* background-image: url("../images/vazum-band.png"); */
+    /* background-size: contain; */
+    /* height: 80vw; */
 }
 
 #band-info .flex-container {
-    align-items: stretch;
-    height: 100%;
-    flex-wrap: nowrap;
+    display: block;
 }
 
 .band-mate {
-    opacity: 0;
+    /* opacity: 0; */
+    background-position: center;
+    background-size: cover;
     transition: 1s ease-in-out all;
-    flex: 1 1 33%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 100%;
-    z-index: 2;
+    /* height: 100%; */
+    /* z-index: 2; */
 }
 
 .band-mate .info {
-    margin-bottom: 20vw;
-}
+    padding: 250px 1em 1em 1em;
+} 
 
 .band-mate .name,
 .band-mate .title {
@@ -390,7 +419,19 @@ footer a:focus {
     font-size: 3vw;
 }
 
-#band-info::after,
+.band-mate#left {
+    background-image: url('../images/zak2.jpg');
+}
+
+.band-mate#center {
+    background-image: url('../images/zak1.jpg');
+}
+
+.band-mate#right {
+    background-image: url('../images/emily.jpg');
+}
+
+/* #band-info::after,
 #band-info::after {
     content: '';
     position: absolute;
@@ -414,9 +455,9 @@ footer a:focus {
 #band-info.show-bg-center::after {
     opacity: 1;
     background-image: url('../images/bg/center.png');
-}
+} */
 
-#band-info.show-bg-right::after,
+/* #band-info.show-bg-right::after,
 #band-info.show-bg-right::after {
     opacity: 1;
     background-image: url('../images/bg/right.png');
@@ -425,7 +466,7 @@ footer a:focus {
 .band-mate:hover,
 .band-mate:focus {
     opacity: 1;
-}
+} */
 
 footer .flex-container>div {
     margin-bottom: 1em;
@@ -470,6 +511,20 @@ footer .social-icon {
 }
 
 @media screen and (min-width: 650px) {
+    #band-info .flex-container {
+        display: flex;
+        align-items: stretch;
+        height: 100%;
+        flex-wrap: nowrap;
+    }
+    
+    .band-mate {
+        flex: 1 1 33%;
+    }
+
+    .band-mate .info {
+        padding: 150px 1em 1em 1em;
+    } 
     #band-info {
         background-size: cover;
     }
