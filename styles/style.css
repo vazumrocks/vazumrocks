@@ -28,7 +28,7 @@ body {
     font-weight: 300;
     padding: 0;
     margin: 0;
-    background-color: black;
+    background-color: #07080A;
 }
 
 .visibly-hidden {
@@ -112,7 +112,7 @@ blockquote {
 .social-icon {
     display: inline-block;
     text-decoration: none;
-    background: black;
+    background: #07080A;
     color: #FFF;
     width: 120px;
     max-width: 100%;
@@ -145,7 +145,7 @@ blockquote {
 }
 
 .social-icon .inner {
-    background-color: black;
+    background-color: #07080A;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -235,9 +235,19 @@ header {
 }
 
 header .logo {
-    width: 200px;
-    max-width: 100%;
-    padding: 0.5em 2em 0.25em 2em;
+/*    width: 200px;
+*/    max-width: 100%;
+    padding: 0 2rem;
+}
+
+header .text-logo {
+    text-transform: uppercase;
+    font-family: 'Cantarell', sans-serif;
+    font-size: 3vw;
+    color: white;
+    font-weight: bold;
+    display: block;
+    text-shadow: 0 2px 5px #07080A;
 }
 
 .menu ul li a {
@@ -247,7 +257,7 @@ header .logo {
 }
 
 .banner {
-    background-position: center;
+    background-position: top center;
     background-size: cover;
     height: 40vw;
     min-height: 200px;
@@ -265,8 +275,8 @@ header .logo {
 
 .banner img {
     opacity: 0.5;
-    margin-top: 50px;
-    width: 35vw;
+    margin-top: 4vw;
+    width: 25vw;
 }
 
 .banner video {
@@ -283,7 +293,7 @@ footer {
     font-size: small;
     font-weight: normal;
     overflow: auto;
-    background: black;
+    background: #07080A;
     position: relative;
     color: white;
     padding: 1em;
@@ -329,7 +339,7 @@ footer a:focus {
 
 
 #social-cta {
-    background-color: black;
+    background-color: #07080A;
     text-align: center;
     position: relative;
     padding: 1em;
@@ -412,7 +422,7 @@ footer a:focus {
     color: white;
     font-weight: bold;
     display: block;
-    text-shadow: 0 2px 5px black;
+    text-shadow: 0 2px 5px #07080A;
 }
 
 .band-mate .title {
