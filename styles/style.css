@@ -57,7 +57,7 @@ h1 {
 }
 
 h2 {
-    font-size: 5vw;
+    font-size: 4.3vw;
     position: relative;
 }
 
@@ -77,7 +77,7 @@ h4 {
 .subheader {
     display: block;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 80%;
+    font-size: 60%;
 }
 
 strong {
@@ -98,6 +98,10 @@ a:focus {
     border-bottom: 2px solid white;
 }
 
+a.no-link:hover, a.no-link:focus {
+    border-bottom: 2px solid transparent;
+}
+
 blockquote {
     margin-top: 2em;
     font-style: italic;
@@ -109,6 +113,10 @@ blockquote {
     text-align: right !important;
 }
 
+.merch img {
+    padding: 0.5rem;
+    display: block;
+}
 .social-icon {
     display: inline-block;
     text-decoration: none;
@@ -217,6 +225,14 @@ section>div {
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
+}
+
+.flex-container.top {
+    align-items: flex-start;
+}
+
+.flex-container.top h2 {
+    margin-top: 0;
 }
 
 .one-half {
