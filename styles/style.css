@@ -116,6 +116,7 @@ blockquote {
 .merch img {
     padding: 0.5rem;
     display: block;
+    flex: 0 1 auto;
 }
 .social-icon {
     display: inline-block;
