@@ -1,4 +1,4 @@
-/* Brand Colors 
+/* Brand Colors
  * teal: #00a5a9
  * dk teal: #001719
  * black: #000000
@@ -74,6 +74,7 @@ h4 {
     display: block;
 }
 
+
 .subheader {
     display: block;
     font-family: 'Roboto Condensed', sans-serif;
@@ -111,6 +112,10 @@ blockquote {
 .author {
     font-weight: bold;
     text-align: right !important;
+}
+
+.merch .flex-item {
+    flex: 0 1 170px;
 }
 
 .merch img {
@@ -428,7 +433,7 @@ footer a:focus {
 
 .band-mate .info {
     padding: 250px 1em 1em 1em;
-} 
+}
 
 .band-mate .name,
 .band-mate .title {
@@ -531,27 +536,40 @@ footer .social-icon {
     margin: 5px
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 500px) {
     footer .flex-container {
         display: block;
     }
 }
 
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 10vw;
+        position: relative;
+    }
+
+    h2 {
+        font-size: 7vw;
+        position: relative;
+    }
+
+}
 @media screen and (min-width: 650px) {
+
     #band-info .flex-container {
         display: flex;
         align-items: stretch;
         height: 100%;
         flex-wrap: nowrap;
     }
-    
+
     .band-mate {
         flex: 1 1 33%;
     }
 
     .band-mate .info {
         padding: 150px 1em 1em 1em;
-    } 
+    }
     #band-info {
         background-size: cover;
     }
@@ -562,4 +580,8 @@ footer .social-icon {
         flex: 0 1 50%;
         padding: 2em 1em 2em 2em;
     }
+    .merch {
+        flex-wrap: wrap;
+    }
+
 }
