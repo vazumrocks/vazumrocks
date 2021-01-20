@@ -75,6 +75,10 @@ h4 {
 }
 
 
+#bio .flex-container {
+    align-items: flex-start;
+}
+
 .subheader {
     display: block;
     font-family: 'Roboto Condensed', sans-serif;
@@ -123,7 +127,7 @@ blockquote {
     display: block;
     flex: 0 1 auto;
 }
-.social-icon {
+/* .social-icon {
     display: inline-block;
     text-decoration: none;
     background: #07080A;
@@ -140,15 +144,15 @@ blockquote {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
     border-bottom: solid 3px #fff;
     transition: .4s;
-}
+} */
 
 .social-icon:hover,
 .btn:focus {
-    -ms-transform: translateY(2px);
+    /* -ms-transform: translateY(2px);
     -webkit-transform: translateY(2px);
-    transform: translateY(2px);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
-    border-bottom: none;
+    transform: translateY(2px); */
+    /* box-shadow: 0 0 1px rgba(0, 0, 0, 0.15); */
+    border-bottom: 2px solid transparent;
 }
 
 .social-icon {
@@ -181,7 +185,7 @@ blockquote {
     width: 70%;
 }
 
-.social-icon::before {
+/* .social-icon::before {
     content: '';
     background-color: white;
     border-radius: 50%;
@@ -194,23 +198,25 @@ blockquote {
 .social-icon:nth-child(odd)::before {
     top: 0;
     left: 0;
-}
+} */
 
-.social-icon:nth-child(even)::before {
+/* .social-icon:nth-child(even)::before {
     right: 0;
     bottom: 0;
 }
+*/
+
 
 .social-icon:hover,
 .social-icon:focus {
-    padding: 3px;
+    border: none;
 }
-
+/*
 .social-icon:hover::before,
 .social-icon:focus::before {
     width: 100%;
     height: 100%;
-}
+} */
 
 
 /* Layout */
@@ -248,7 +254,7 @@ section>div {
 }
 
 header {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     display: flex;
     width: 100%;
@@ -331,12 +337,22 @@ footer a:focus {
 /* Sections */
 
 #promo {
-    background-color: #66131B;
+    background-color: #07080a;
+    /* background-color: #66131B; */
     background-position: bottom left;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../images/bg/black-splatter.png');
-    padding-bottom: 100px;
+    /* background-image: url('../images/bg/witch.JPG'); */
+    padding-bottom: 20px;
+}
+
+#promo #center-logo {
+    width: 150px;
+    max-width: 100%;
+    margin: -75px auto 0 auto;
+    display: block;
+    position: absolute;
+    left: calc(50% - 75px);
 }
 
 #promo h2 {
@@ -348,15 +364,20 @@ footer a:focus {
     margin: 0 auto;
 }
 #promo .streak-up {
-    background-image: url("../images/bg/red-streak-up.png");
+    background-image: url("../images/bg/black-splatter-down.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: calc(100% - 10px);
+    bottom: calc(100% - 4px);
     left: 0;
     right: 0;
-    height: 100px;
+    height: 100%;
     width: 100%;
+    transform: rotate(180deg);
+}
+
+#promo .flex-container.top {
+    padding-top: 75px;
 }
 
 
